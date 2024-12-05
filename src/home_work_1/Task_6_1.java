@@ -22,10 +22,12 @@ public class Task_6_1 {
 
         if (Objects.equals(name, "Вася")){
             System.out.println("Привет!\nЯ тебя так долго ждал");
-        } else if (Objects.equals(name,"Анастасия")){
-            System.out.println("Я тебя так долго ждал");
         } else {
-            System.out.println("Добрый день, а вы кто?");
+            if (Objects.equals(name,"Анастасия")){
+                System.out.println("Я тебя так долго ждал");
+            } else {
+                System.out.println("Добрый день, а вы кто?");
+            }
         }
         in.close();
     }

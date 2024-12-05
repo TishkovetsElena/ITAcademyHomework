@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
 5.* Создать СТАТИЧЕСКИЙ метод sleepIn рядом с методом main. (Взято с https://codingbat.com/prob/p187868).
-	5.1 Данный метод будет принима два параметра
+	5.1 Данный метод будет принимать два параметра
 	5.2 Будет отвечать на вопрос спать ли дальше (да\нет) (возвращать true либо false).
 	5.3 Первый параметр boolean weekday обозначает рабочий день
 	5.4 Второй параметр boolean vacation обозначает отпуск.
@@ -26,10 +26,14 @@ public class Task_5 {
         }
     }
 
+    /**
+     * Метод проверяет можем спать дальше или нет
+     * @param weekday признак рабочий день
+     * @param vacation признак отпуск
+     * @return true - если можно спать дальше,
+     *         false - если спать нельзя
+     */
     public static boolean sleepIn(boolean weekday, boolean vacation){
-        if(weekday || vacation){
-            return true;
-        }
-        return false;
+        return weekday || vacation;
     }
 }
