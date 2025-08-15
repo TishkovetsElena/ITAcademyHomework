@@ -1,6 +1,6 @@
 package home_work_2.arrays;
 
-import java.util.Arrays;
+import home_work_2.utils.ArraysUtils;
 
 public class ArraysTask_2_4 {
     /**

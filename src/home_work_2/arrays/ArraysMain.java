@@ -1,4 +1,7 @@
 package home_work_2.arrays;
+
+import home_work_2.utils.ArraysUtils;
+
 /**
  * 2.1. Создать класс ArraysUtils. В этом классе не должно быть main метода. В этом классе написать следующие методы:
  * 2.1.1. Написать метод public static int[] arrayFromConsole(). Данный метод размер массива и каждый его элемент

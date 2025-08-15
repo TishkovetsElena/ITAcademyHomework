@@ -1,5 +1,7 @@
 package home_work_2.arrays;
 
+import home_work_2.utils.ArraysUtils;
+
 /**
  * 2.2 Создать класс ArraysIteration. В этом классе написать перебор (итерирование) массива
  * при помощи do....while, while, for, foreach. Вызывая ранее созданный метод arrayFromConsole

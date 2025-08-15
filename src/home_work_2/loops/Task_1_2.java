@@ -7,7 +7,7 @@ public class Task_1_2 {
     public static void main(String[] args) {
         int number = Integer.parseInt(args[0]);
         long sum = 1L;
-        sum = myltiply(number);
+        sum = multiply(number);
 
         int a = 1;
         int[] array = new int[number];
@@ -15,18 +15,19 @@ public class Task_1_2 {
             array[i] = a;
             a++;
         }
+
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
         System.out.println(" = " + sum);
     }
 
-    public static long myltiply(int number) {
+    public static long multiply(int number) {
         if (number == 1 || number == 0) {
             return number;
         } else {
             long result = 1L;
-            result = number * myltiply(number - 1);
+            result = number * multiply(number - 1);
             return result;
         }
     }
